@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import limon from "../assets/limon.jpg";
+import WorkCard from "./WorkCard";
 
 export default function Hero() {
   return (
@@ -76,9 +77,35 @@ export default function Hero() {
       </div>
       {/* my work */}
       <div className="text-white">
-      <h2 className="text-4xl font-bold flex items-center justify-center flex-row pt-10  space-x-5">
+        <h2 className="text-4xl font-bold flex items-center justify-center flex-row pt-10  space-x-5">
           My Work
         </h2>
+        <div className=" flex items-center justify-center space-x-3 pt-3">
+          <WorkCard
+            img={limon}
+            title={"rest api"}
+            description={"ressssssssssssssssssss"}
+            demo="www.google.com"
+            source_code={"www.github.com"}
+            frameworks={["node js", "react js"]}
+          />
+          <WorkCard
+            img={limon}
+            title={"rest api"}
+            description={"ressssssssssssssssssss"}
+            demo="www.google.com"
+            source_code={"www.github.com"}
+            frameworks={["node js", "react js"]}
+          />
+          <WorkCard
+            img={limon}
+            title={"rest api"}
+            description={"ressssssssssssssssssss"}
+            demo="www.google.com"
+            source_code={"www.github.com"}
+            frameworks={["node js", "react js"]}
+          />
+        </div>
       </div>
     </div>
   );
