@@ -9,6 +9,7 @@ import {GrReactjs} from 'react-icons/gr'
 import {FiType} from 'react-icons/fi'
 import {TbBrandNextjs,TbBrandReactNative ,TbBrandVscode} from 'react-icons/tb'
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 export default function Hero() {
   return (

@@ -45,7 +45,7 @@ export default function Contact() {
           Body:
         </label>
         <textarea
-          className="bg-[#2b106a] border-2 border-grey-500 rounded h-[500px] w-[600px]"
+          className="bg-[#2b106a] border-2 border-grey-500 rounded h-[400px] w-[600px]"
           placeholder="enter your wishes"
           id="body"
           value={body}
