@@ -1,6 +1,8 @@
 
 'use client';
 import React, { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
   const [subject, setSubject] = useState("");
@@ -15,10 +17,23 @@ export default function Contact() {
   };
 
   const sendEmail = () => {
-    const mailtoLink = `mailto:imlimonpro@gmail.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailtoLink;
+    if(!subject||!body){
+      toast.error("please enter credential", {
+        position: toast.POSITION.TOP_RIGHT
+      });
+    }
+    else{
+      const mailtoLink = `mailto:imlimonpro@gmail.com?subject=${encodeURIComponent(
+        subject
+      )}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoLink;
+      toast.success("redirect to email ", {
+        position: toast.POSITION.TOP_RIGHT
+      });
+      setBody("")
+      setSubject("")
+    }
+   
   };
 
   return (
@@ -59,6 +74,7 @@ export default function Contact() {
         />
       </div>
       <button className="h-[50px] w-[100px] bg-[#2b106a] rounded ml-[500px]" onClick={sendEmail}>Enter</button>
+      <ToastContainer />
     </div>
   );
 }
