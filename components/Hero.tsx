@@ -1,7 +1,14 @@
 import Image from "next/image";
 
 import limon from "../assets/limon.jpg";
+import CImage from "../assets/icons/C.png"
 import WorkCard from "./WorkCard";
+import { FaNodeJs } from 'react-icons/fa';
+import {SiExpress ,SiTypescript,SiNestjs ,SiMysql,SiMongodb,SiPostgresql,SiJavascript,SiPython,SiRedux ,SiAmazonaws,SiMui,SiReactquery,SiPrisma,} from 'react-icons/si'
+import {GrReactjs} from 'react-icons/gr'
+import {FiType} from 'react-icons/fi'
+import {TbBrandNextjs,TbBrandReactNative ,TbBrandVscode} from 'react-icons/tb'
+import Contact from "./Contact";
 
 export default function Hero() {
   return (
@@ -36,42 +43,42 @@ export default function Hero() {
         <h2 className="text-4xl font-bold flex items-center justify-center flex-row pt-10  space-x-5">
           My Skills
         </h2>
-        <div className="flex items-center justify-center space-x-4 mt-3">
+        <div className="flex items-center justify-center space-x-10 mt-3">
           <div className="">
-            <h4 className="p-3 bg-[#2b106a] rounded">Backend Framworks</h4>
-            <p>Node js</p>
-            <p>Express js</p>
-            <p>Nest js</p>
+            <h4 className="p-3 bg-[#2b106a] rounded mb-3">Backend Framworks</h4>
+            <p className="flex items-center mb-3 ">Node js <span className="ml-2"> <FaNodeJs size={20}/></span> </p>
+            <p className="flex items-center mb-3 ">Express js <span className="ml-2"><SiExpress/></span></p>
+            <p className="flex items-center mb-3 ">Nest js <span className="ml-2"><SiNestjs/> </span></p>
           </div>
           <div>
-            <h4 className="p-3 bg-[#2b106a] rounded">Frontend FrameWorks</h4>
-            <p> React js </p>
-            <p> Next js</p>
-            <p> React Native</p>
+            <h4 className="p-3 bg-[#2b106a] rounded mb-3">Frontend FrameWorks</h4>
+            <p className="flex items-center mb-3 "> React js <span className="ml-2"><GrReactjs/></span></p>
+            <p className="flex items-center mb-3 "> Next js <span className="ml-2"><TbBrandNextjs/></span></p>
+            <p className="flex items-center mb-3 "> React Native <span className="ml-2"><TbBrandReactNative/></span></p>
           </div>
           <div>
-            <h4 className="p-3 bg-[#2b106a] rounded">Databases</h4>
-            <p> MySql </p>
-            <p> MongoDb</p>
-            <p> Postgresql</p>
+            <h4 className="p-3 bg-[#2b106a] rounded mb-3">Databases</h4>
+            <p className="flex items-center mb-3 "> MySql <span className="ml-2"><SiMysql/></span> </p>
+            <p className="flex items-center mb-3 "> MongoDb <span className="ml-2"><SiMongodb/></span></p>
+            <p className="flex items-center mb-3 "> Postgresql <span className="ml-2"><SiPostgresql/></span></p>
           </div>
           <div>
-            <h4 className="p-3 bg-[#2b106a] rounded">Programming Languages</h4>
-            <p> JavaScript </p>
-            <p> Python</p>
-            <p> C</p>
+            <h4 className="p-3 bg-[#2b106a] rounded mb-3">Programming Languages</h4>
+            <p className="flex items-center mb-3 "> JavaScript <span className="ml-2"> <SiJavascript/></span>  </p>
+            <p className="flex items-center mb-3 "> Python <span className="ml-2"><SiPython/></span></p>
+            <p className="flex items-center mb-3 "> C <span className="text-white ml-2"> <Image src={CImage} height={14} alt=""/> </span></p>
           </div>
           <div>
-            <h4 className="p-3 bg-[#2b106a] rounded">Familier</h4>
-            <p> Redex </p>
-            <p> Context Api</p>
-            <p> Material UI</p>
+            <h4 className="p-3 bg-[#2b106a] rounded mb-3">Familier</h4>
+            <p className="flex items-center mb-3 "> Redux <span className="ml-2"><SiRedux/></span> </p>
+            <p className="flex items-center mb-3 "> AWS <span className="ml-2"><SiAmazonaws/></span></p>
+            <p className="flex items-center mb-3 " > Material UI <span className="ml-2"><SiMui/></span></p>
           </div>
           <div>
-            <h4 className="p-3 bg-[#2b106a] rounded">Also Knows</h4>
-            <p> React Query</p>
-            <p> Prisma</p>
-            <p> typeORM</p>
+            <h4 className="p-3 bg-[#2b106a] rounded mb-3">Also Knows</h4>
+            <p className="flex items-center mb-3 "> React Query <span className="ml-2"><SiReactquery/></span></p>
+            <p className="flex items-center mb-3 "> Prisma <span className="ml-2"><SiPrisma/></span></p>
+            <p className="flex items-center mb-3 "> typeORM <span className="ml-2"><FiType/></span></p>
           </div>
         </div>
       </div>
@@ -80,7 +87,7 @@ export default function Hero() {
         <h2 className="text-4xl font-bold flex items-center justify-center flex-row pt-10  space-x-5">
           My Work
         </h2>
-        <div className=" flex items-center justify-center space-x-3 pt-3">
+        <div className=" grid grid-cols-4 place-items-center pt-10 pl-[400px] pr-[400px] gap-4">
           <WorkCard
             img={limon}
             title={"rest api"}
@@ -98,6 +105,38 @@ export default function Hero() {
             frameworks={["node js", "react js"]}
           />
           <WorkCard
+            img={limon}
+            title={"rest api"}
+            description={"ressssssssssssssssssss"}
+            demo="www.google.com"
+            source_code={"www.github.com"}
+            frameworks={["node js", "react js"]}
+          />
+           <WorkCard
+            img={limon}
+            title={"rest api"}
+            description={"ressssssssssssssssssss"}
+            demo="www.google.com"
+            source_code={"www.github.com"}
+            frameworks={["node js", "react js"]}
+          />
+           <WorkCard
+            img={limon}
+            title={"rest api"}
+            description={"ressssssssssssssssssss"}
+            demo="www.google.com"
+            source_code={"www.github.com"}
+            frameworks={["node js", "react js"]}
+          />
+           <WorkCard
+            img={limon}
+            title={"rest api"}
+            description={"ressssssssssssssssssss"}
+            demo="www.google.com"
+            source_code={"www.github.com"}
+            frameworks={["node js", "react js"]}
+          />
+           <WorkCard
             img={limon}
             title={"rest api"}
             description={"ressssssssssssssssssss"}
@@ -106,6 +145,12 @@ export default function Hero() {
             frameworks={["node js", "react js"]}
           />
         </div>
+      </div>
+      <div className="text-white">
+      <h2 className="text-4xl font-bold flex items-center justify-center flex-row pt-10  space-x-5">
+          Contact
+        </h2>
+        <Contact/>
       </div>
     </div>
   );
