@@ -1,10 +1,10 @@
 import Image from "next/image";
-import limon from "../assets/limon.jpg";
+import Alter from "../assets/alter.png";
 
 export default function WorkCard({img,title,description,source_code,demo,frameworks}:any){
     return(
-        <div className="max-w-[300px] rounded overflow-hidden shadow-lg flex flex-col items-center border-2">
-        <Image className="flex items-center justify-center mt-3" height={200} width={200} src={limon} alt="Sunset in the mountains"/>
+        <div className="max-w-[300px] h-[450px] rounded flex flex-col items-center border-2 ">
+        <Image className="flex items-center justify-center mt-3" height={200} width={200}  src={img ? img : Alter} alt="no image for this"/>
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">{title}</div>
           <p className="text-white text-base">

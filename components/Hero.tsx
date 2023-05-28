@@ -90,55 +90,47 @@ export default function Hero() {
         </h2>
         <div className=" grid grid-cols-4 place-items-center pt-10 pl-[400px] pr-[400px] gap-4">
           <WorkCard
-            img={limon}
-            title={"rest api"}
-            description={"ressssssssssssssssssss"}
-            demo="www.google.com"
-            source_code={"www.github.com"}
-            frameworks={["node js", "react js"]}
+            img={''}
+            title={"ProductManagement"}
+            description={"using knex-my sql-express js"}
+            demo=""
+            source_code={"https://github.com/limonPRO/ProductManagement"}
+            frameworks={["node js", "react js","mySql" , "knexjs"]}
           />
           <WorkCard
-            img={limon}
-            title={"rest api"}
-            description={"ressssssssssssssssssss"}
-            demo="www.google.com"
-            source_code={"www.github.com"}
-            frameworks={["node js", "react js"]}
+            img={""}
+            title={"MERN AUTH"}
+            description={"MERN stack application with authentication"}
+            demo=""
+            source_code={"https://github.com/limonPRO/mern-auth"}
+            frameworks={["node js", "react js" , "mongoose" , "JWT"]}
           />
-          <WorkCard
-            img={limon}
-            title={"rest api"}
-            description={"ressssssssssssssssssss"}
-            demo="www.google.com"
-            source_code={"www.github.com"}
+           <WorkCard
+            img={''}
+            title={"Code Arena"}
+            description={"it is a simple problem solving platform build with node js and react js"}
+            demo=""
+            source_code={"https://github.com/limonPRO/CodeArena"}
             frameworks={["node js", "react js"]}
           />
            <WorkCard
-            img={limon}
-            title={"rest api"}
-            description={"ressssssssssssssssssss"}
-            demo="www.google.com"
-            source_code={"www.github.com"}
-            frameworks={["node js", "react js"]}
+            img={''}
+            title={"NestJS Todo APP rest api"}
+            description={"backend todo rest api with jwt authentication"}
+            demo=""
+            source_code={"https://github.com/limonPRO/nestjs-todo-app-with-auth"}
+            frameworks={["nest js", "prisma" , "postgresSql"]}
           />
            <WorkCard
-            img={limon}
-            title={"rest api"}
-            description={"ressssssssssssssssssss"}
-            demo="www.google.com"
-            source_code={"www.github.com"}
-            frameworks={["node js", "react js"]}
+            img={''}
+            title={"REST API"}
+            description={"create a simple rest api using express js , mysql and knex.js"}
+            demo=""
+            source_code={"https://github.com/limonPRO/restapi"}
+            frameworks={["node js", "express js","mySql","knexjs"]}
           />
            <WorkCard
-            img={limon}
-            title={"rest api"}
-            description={"ressssssssssssssssssss"}
-            demo="www.google.com"
-            source_code={"www.github.com"}
-            frameworks={["node js", "react js"]}
-          />
-           <WorkCard
-            img={limon}
+            img={''}
             title={"rest api"}
             description={"ressssssssssssssssssss"}
             demo="www.google.com"
