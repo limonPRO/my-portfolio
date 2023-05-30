@@ -4,7 +4,7 @@ import Hero from '@/components/Hero';
 import Footer from '@/components/Footer';
 export default function Home() {
   return (
-    <div className='bg-black w-full h-[260vh]'>
+    <div className='bg-black w-full h-[280vh]'>
          <Header/>
          <Hero/>
          <Footer/>

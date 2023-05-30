@@ -10,6 +10,7 @@ import {FiType} from 'react-icons/fi'
 import {TbBrandNextjs,TbBrandReactNative ,TbBrandVscode} from 'react-icons/tb'
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Experience from "./Exprience";
 
 export default function Hero() {
   return (
@@ -44,7 +45,7 @@ export default function Hero() {
         <h2 className="text-4xl font-bold flex items-center justify-center flex-row pt-10  space-x-5">
           My Skills
         </h2>
-        <div className="flex items-center justify-center space-x-10 mt-3">
+        <div className="flex items-center justify-center space-x-10 pt-10">
           <div className="">
             <h4 className="p-3 bg-[#2b106a] rounded mb-3">Backend Framworks</h4>
             <p className="flex items-center mb-3 ">Node js <span className="ml-2"> <FaNodeJs size={20}/></span> </p>
@@ -83,6 +84,14 @@ export default function Hero() {
           </div>
         </div>
       </div>
+    <div className="text-white">
+    <h2 className="text-4xl font-bold flex items-center justify-center flex-row pt-10  space-x-5">
+         Experience
+        </h2>
+        <div className="pt-10">
+          <Experience/>
+        </div>
+    </div>
       {/* my work */}
       <div className="text-white">
         <h2 className="text-4xl font-bold flex items-center justify-center flex-row pt-10  space-x-5">
